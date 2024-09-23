@@ -1,0 +1,2 @@
+./ngrok authtoken 2exIeLfEWL5KSWW5j3yS1StoH0c_3AxpECRFRkrQSCy8rWssF
+./ngrok tcp 25565 --region=us

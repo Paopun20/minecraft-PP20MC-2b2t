@@ -1,0 +1,42 @@
+Steps to Host a Minecraft Server
+
+1. Setup Your Minecraft Server:
+   Ensure your server files (like `server.jar` for Minecraft) are correctly set up in the `/workspaces/minecraft-PP20MC-2b2t` directory. If you're using YML scripts, they might be automation scripts for setup and management.
+
+2. Install Prerequisites:
+   Ensure you have the required software installed, like:
+   - Java: Minecraft servers typically run on Java. Make sure the correct version is installed.
+     ```
+     java -version
+     ```
+   - Bash: Your scripts seem to use bash, so make sure your environment supports it.
+
+3. Configure `main_host.yml`:
+   If this YAML file is related to server hosting, ensure it's properly configured. It might include settings for:
+   - Server IP
+   - Port forwarding
+   - Memory allocation
+   - Server properties like max-players, difficulty, etc.
+
+4. Launch the Server in Two Terminals:
+
+   Terminal 1: Start the Hosting Process
+   Open the first terminal and run:
+   cd /workspaces/minecraft-PP20MC-2b2t bash main_host.yml
+   
+   Terminal 2: Start the Minecraft Server
+   Open the second terminal and run:
+   cd /workspaces/minecraft-PP20MC-2b2t bash main_start_server.yml
+
+5. Access the Minecraft Server:
+- Local Access: If you're running the server on your local machine, open Minecraft, go to "Multiplayer", and connect using `localhost` or `127.0.0.1`.
+- Remote Access: If you're hosting the server remotely (e.g., on a VPS), use your public IP address and ensure port forwarding is set up.
+
+6. Additional Considerations:
+- Firewall Settings: Ensure that the required port (default Minecraft port: 25565) is open in your firewall.
+- Network Setup: If you're running the server on a different machine, you may need to configure port forwarding on your router.
+
+Save the File: Once you've pasted the instructions, save the file:
+Press Ctrl + O to save.
+Press Enter to confirm the filename.
+Press Ctrl + X to exit.
